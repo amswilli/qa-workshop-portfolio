@@ -1,17 +1,32 @@
 # Coverage Decisions 
 
-## Riesgos que se probarán primero 
-1. [Riesgo 1] 
-2. [Riesgo 2] 
-3. [Riesgo 3] 
+---
 
-## ¿Por qué esos riesgos son prioridad? 
-[Explica por qué se atenderían primero] 
+## 🚀 Riesgos que se probarán primero
 
-## Qué se probará menos o quedará fuera por ahora 
-- [Exclusión 1] 
-- [Exclusión 2] 
-- [Exclusión 3] 
+1. **Manipulación de valores y montos en el carrito de compras (R1):** Probar los límites y la validación de montos negativos o precios alterados para evitar transacciones fraudulentas[cite: 1].
+2. **Vulnerabilidad de seguridad en operaciones críticas de la API (R2):** Verificar la ausencia de control de acceso en la eliminación o modificación de mascotas (`DELETE /pet/{id}`) e inventarios[cite: 1].
+3. **Inconsistencias en el proceso de Registro y Checkout (R3):** Evaluar la validación de datos en el formulario de registro (*Register Now*) para asegurar que la autenticación no bloquee la compra[cite: 1].
 
-## Justificación de exclusiones 
-[Explica por qué esas exclusiones son razonables]
+---
+
+## 💡 ¿Por qué esos riesgos son prioridad?
+
+* **Protección financiera del negocio:** Un fallo en las validaciones del carrito de compras (R1) genera pérdidas financieras inmediatas e impacta la rentabilidad de JPetStore[cite: 1].
+* **Integridad y seguridad de los datos:** Permitir la alteración o borrado del catálogo sin autenticación en la API (R2) expone la operación a ataques externos y pérdida crítica de información[cite: 1].
+* **Garantía del flujo transaccional:** Si el registro de usuarios falla o acepta datos inconsistentes (R3), se interrumpe la conversión de ventas, provocando el abandono de la plataforma[cite: 1].
+
+---
+
+## 🚫 Qué se probará menos o quedará fuera por ahora
+
+- **Navegación exhaustiva por categorías del catálogo (R4):** Validación completa de todos los enlaces de categorías y renderizado de productos con baja probabilidad de falla[cite: 1].
+- **Manejo de escenarios bordes con productos fuera de stock (R5):** Pruebas profundas sobre la compra de ítems agotados y mensajes de error no controlados en la interfaz visual[cite: 1].
+
+---
+
+## 📜 Justificación de exclusiones
+
+* **(R4):** Aunque los enlaces rotos afectan la experiencia del cliente, tienen menor impacto financiero directo y menor probabilidad de ocurrencia comparados con la validación de pagos o la seguridad[cite: 1].
+* **(R5):** Dado que la integración real entre la Web y la API no está confirmada, probar escenarios de agotamiento de stock requiere primero estabilizar las reglas de negocio base del carrito y la API[cite: 1].
+

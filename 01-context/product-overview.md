@@ -1,23 +1,39 @@
 # Product Overview
 
-## Nombre del producto
-Plataforma de Comercio Electrónico PetStore (compuesta por la aplicación web JPetStore y la API pública Swagger Petstore).
+---
 
-## ¿Qué tipo de producto es?
-Plataforma digital de comercio electrónico (E-commerce) y servicio de API pública REST para gestión de mascotas e inventario.
+## 📌 Nombre del producto
+**Plataforma de Comercio JPetStore**  
+*(Integrada por la aplicación web **JPetStore** y el servicio **Swagger Petstore API**)*
 
-## ¿Qué problema resuelve?
-Permite a los usuarios consultar, seleccionar y comprar mascotas, alimentos, accesorios y productos de cuidado a través de internet sin necesidad de acudir a una tienda física.
+---
 
-## ¿Cómo genera valor para el negocio?
-Sirve como el principal canal de ventas digital de PetStore Corp para comercializar productos y mascotas a través de internet. Y permite la toma de pedidos, gestión de inventario y registro de transacciones de manera digital y continua.
+## 🛠️ ¿Qué tipo de producto es?
+Plataforma digital de comercio (**E-Commerce**) y servicio de **API REST** pública para la gestión de inventario, pedidos y catálogo de mascotas.
 
-## Usuarios principales
-- Clientes o compradores finales.
-- Administradores del sistema, personal de PetStore.
-- Integradores y desarrolladores.
+---
 
-## Funcionalidades principales
-- Navegación del catálogo y búsqueda de productos.
-- Gestión del carrito de compras y checkout.
-- Registro y autenticación de usuarios
+## 🎯 ¿Qué problema resuelve?
+Satisface la necesidad de los clientes de consultar, seleccionar y adquirir mascotas desde cualquier lugar sin acudir a una tienda física, digitalizando completamente la experiencia de compra y la gestión operativa.
+
+---
+
+## 📈 ¿Cómo genera valor para el negocio?
+
+* 💰 Sirve como el principal canal de ventas digital de JPetStore para comercializar mascotas a través de internet. Y permite la toma de pedidos, gestión de inventario y registro de transacciones de manera digital y continua.
+
+---
+
+## 👤 Usuarios principales
+
+* **🛍️ Clientes o compradores finales.**
+* **📦 Administradores del sistema, personal de JPetStore.**
+* **👨‍💻 Integradores y desarrolladores.**
+
+---
+
+## 🚀 Funcionalidades principales
+
+1. **🔍 Navegación del catálogo y búsqueda de mascotas.**
+2. **🛒 Gestión del carrito de compras y checkout.**
+3. **🔑 Registro y autenticación de usuarios**
